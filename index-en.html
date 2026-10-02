@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio // Guilherme Assunção</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Urbanist:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#sobre">ABOUT ME</a></li>
+    <li><a href="#skills">SKILLS</a></li>
+    <li><a href="#projetos">PROJECTS</a></li>
+    <li><a href="#contato">CONTACT</a></li>
+    <li><a href="#rodape">SOCIAL MEDIA</a></li>
+  </ul>
+  <div class="botoeszinhos">
+    <button id="btnTema"> <img src="darkmode.png" alt="Modo Escuro"></button>
+    <button id="btnIdioma"><a href="index.html">PT</a> <img src="language.png" alt="Idioma"></button>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<section class="inicio" id="home">
+  <div class="inicio-txt">
+    <h2><span class="efeito-digitar">Guilherme Assunção</span></h2>
+  </div>
+
+  <div class="inicio-img">
+    <img src="free-user-icon-3296-thumb.png" alt="Foto de perfil padrão">
+  </div>
+
+ 
+<div class="caixa-inicio" id="abrirModal">
+  <div class="caixa-conteudo">
+    <i class="fa-solid fa-address-card"></i>
+    <p>Know more clicking here. <strong>about me.</strong></p>
+  </div>
+</div>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-fechar" id="fecharModal">&times;</button>
+    <h2>// ABOUT ME</h2>
+    <p>Olá! Sou o Guilherme, estudante de desenvolvimento web no <strong>COTEMIG</strong>.</p>
+    <p>Tenho foco em criar interfaces modernas com HTML, CSS, JavaScript e lógica em C#.</p>
+    <div class="modal-tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>C#</span>
+    </div>
+  </div>
+</div>
+  <a href="#sobre" class="scroll-down">↓</a>
+</section>
+
+<section class="sobre" id="sobre">
+  <h2>// ABOUT ME</h2>
+  <p>
+    I'm a high school technical student at COTEMIG, passionate about technology and front-end development. 
+    I focus on building intuitive, responsive, and modern web interfaces using HTML, CSS, JavaScript, and C#.
+  </p>
+</section>
+
+<section class="skills" id="skills">
+  <h2>// SKILLS</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="fa-brands fa-html5"></i>
+      <h3>HTML</h3>
+      <p>Semantic structuring and web accessibility.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-css3-alt"></i>
+      <h3>CSS</h3>
+      <p>Responsive design, Flexbox and Grid.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-js"></i>
+      <h3>JavaScript</h3>
+      <p>In progress.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>C#</h3>
+      <p>Object-oriented programming and backend logic basics.</p>
+    </div>
+  </div>
+</section>
+
+<section class="projetos" id="projetos">
+  <h2>// PROJECTS</h2>
+
+  <div class="projetos-grid">
+
+    <div class="projeto-card">
+      <div class="projeto-img-box">
+        <i class="fa-solid fa-guitar"></i>
+      </div>
+      <div class="projeto-info">
+        <h3>Landing Page VIRTURGUITAR</h3>
+        <p>Themed landing page designed for guitar presentation, focusing on responsive layout and modern styling.</p>
+        <div class="projeto-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>Web Design</span>
+        </div>
+        <div class="projeto-links">
+          <a href="https://github.com/guilherme110410/LandingPageVIRTURGUITAR" target="_blank" class="btn-projeto">
+            <i class="fa-brands fa-github"></i> See on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="projeto-card">
+      <div class="projeto-img-box">
+        <i class="fa-solid fa-clipboard-check"></i>
+      </div>
+      <div class="projeto-info">
+        <h3>Interactive Form JS</h3>
+        <p>Interactive web form with real-time validation and DOM manipulation using vanilla JavaScript.</p>
+        <div class="projeto-tags">
+          <span>JavaScript</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+        </div>
+        <div class="projeto-links">
+          <a href="https://github.com/guilherme110410/Formul-rio-com-JS" target="_blank" class="btn-projeto">
+            <i class="fa-brands fa-github"></i> See on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+    
+</section>
+
+<section class="contato" id="contato">
+
+
+  <div class="titulo">//CONTACT</div>
+  
+  <form id="meuFormulario">
+    <div class="formularioFundo">
+      <div class="formularioDentro">
+        <label for="nome">Name</label>
+        <input type="text" placeholder="Seu Nome Completo" id="nome" oninput="mascara_nome()">
+        
+        <label for="email">E-mail</label>
+        <input type="text" placeholder="xxxx@gmail.com" id="email" oninput="mascara_email()" maxlength="320">
+        
+        <label for="telefone">Tel</label>
+        <input type="tel" placeholder="+55(31)99999-9999" id="telefone" oninput="mascara_telefone()" maxlength="17">
+        
+        <label for="mensagem">Write</label>
+        <input type="text" placeholder="Digite aqui sua mensagem." id="mensagem" oninput="mascara_mensagem()" maxlength="100">
+        
+        <button type="submit" class="enviar">SENT</button>
+      </div>
+    </div>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <section class="rodape" id="rodape">
+    <h2>//LET'S TALK?</h2>
+    
+    <div class="rodape-conteudo">
+      <a href="https://github.com/guilherme110410?tab=repositories" target="_blank" class="rodape-item">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="22602330@aluno.cotemig.com" class="rodape-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>E-mail</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/guilherme-assuncao-de-freitas-169338440/?isSelfProfile=true target="_blank" class="rodape-item">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="tel:+5531999209814" class="rodape-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>Tel</span>
+      </a>
+    </div>
+  </section>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
